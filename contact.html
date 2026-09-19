@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — CoverPoint | Get In Touch</title>
+<meta name="description" content="Contact Ahmed Taylor, licensed insurance agent, for questions and quotes in GA, TX, SC, MS, and TN.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Cover<span>Point</span></a>
+    <button class="hamburger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+    <nav>
+      <ul id="nav">
+        <li><a href="index.html#coverage">Coverage Types</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1>Contact</h1>
+  <p>Questions, quotes, or just want a second opinion? I read every message personally.</p>
+</div>
+
+<section>
+  <div class="form-wrap">
+    <!--
+      FORMSPREE SETUP (takes ~5 minutes):
+      1. Go to https://formspree.io and create a free account
+      2. Click "+ New Form", name it "CoverPoint Contact"
+      3. Copy your form's endpoint URL (looks like https://formspree.io/f/xabcdwyz)
+      4. Replace the action value below with YOUR endpoint
+      5. Submit a test message — Formspree will email you to confirm
+    -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone *</label>
+      <input type="tel" id="phone" name="phone" placeholder="(706) 555-0123" required>
+
+      <label for="state">Your State *</label>
+      <select id="state" name="state" required>
+        <option value="">Select your state...</option>
+        <option value="GA">Georgia</option>
+        <option value="TX">Texas</option>
+        <option value="SC">South Carolina</option>
+        <option value="MS">Mississippi</option>
+        <option value="TN">Tennessee</option>
+        <option value="Other">Other (I'll point you to resources or a local agent)</option>
+      </select>
+
+      <label>I'm interested in (check all that apply):</label>
+      <div class="checkbox-row"><input type="checkbox" name="interest" value="Life Insurance"> Life Insurance</div>
+      <div class="checkbox-row"><input type="checkbox" name="interest" value="Health Insurance"> Health Insurance</div>
+      <div class="checkbox-row"><input type="checkbox" name="interest" value="Medicare"> Medicare</div>
+      <div class="checkbox-row"><input type="checkbox" name="interest" value="Auto Insurance"> Auto Insurance</div>
+      <div class="checkbox-row"><input type="checkbox" name="interest" value="Home/Renters Insurance"> Home/Renters Insurance</div>
+      <div class="checkbox-row"><input type="checkbox" name="interest" value="Ancillary Coverage"> Ancillary Coverage (disability, accident, dental/vision)</div>
+      <div class="checkbox-row"><input type="checkbox" name="interest" value="General Question"> Just have a question</div>
+
+      <label for="message">How can I help? *</label>
+      <textarea id="message" name="message" required placeholder="Tell me a little about your situation or question..."></textarea>
+
+      <div class="consent-box">
+        <div class="checkbox-row">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent" style="display:inline;font-weight:400;margin:0">I agree to be contacted by Ahmed Taylor / CoverPoint by phone call, text message, or email about my inquiry. Message and data rates may apply. Consent is not a condition of purchase. I can opt out at any time by replying STOP or asking to be removed. *</label>
+        </div>
+        <div class="checkbox-row">
+          <input type="checkbox" id="medicare-consent" name="medicare_consent">
+          <label for="medicare-consent" style="display:inline;font-weight:400;margin:0">Medicare inquiry: I give permission to be contacted about Medicare options. (Required before specific Medicare plan details can be discussed.)</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-gold" style="margin-top:1.4rem;width:100%">Send Message</button>
+      <p class="form-note">Your information is used only to respond to your inquiry and is never sold. See the <a href="privacy.html">Privacy Policy</a>.</p>
+    </form>
+
+    <div style="margin-top:2rem;text-align:center;border-top:1px solid #e4ebf1;padding-top:1.5rem">
+      <p><strong>Prefer to reach out directly?</strong></p>
+      <p>Email: <a href="mailto:info@getcoverpoint.com">info@getcoverpoint.com</a><br>
+      Phone: (706) 829-0147<br>
+      <em>Services available in GA, TX, SC, MS, and TN.</em></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>CoverPoint</h4>
+      <p style="max-width:280px;font-size:.9rem">Independent insurance guidance and personal finance education, all in one place.</p>
+      <p class="lic-line">Ahmed Taylor, Licensed Insurance Agent<br>GA Resident Lic. #3697702 &middot; Also licensed in TX, SC, MS, TN<br>(706) 829-0147 &middot; <a href="mailto:info@getcoverpoint.com">info@getcoverpoint.com</a></p>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li><a href="services.html">Life Insurance</a></li>
+        <li><a href="services.html">Health Insurance</a></li>
+        <li><a href="services.html">Medicare</a></li>
+        <li><a href="services.html">Auto &amp; Home</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="disclaimer">
+    <p>Disclaimer: CoverPoint provides general educational information only and does not constitute insurance, legal, tax, or financial advice. Products and services are offered only in states where the agent is licensed (GA, TX, SC, MS, TN). Coverage availability and terms vary by provider and state. Not affiliated with or endorsed by the U.S. government, Medicare, or any state insurance department. Always consult a licensed professional before making insurance decisions.</p>
+    <p style="margin-top:.6rem">&copy; <span id="year">2026</span> CoverPoint &middot; getcoverpoint.com &middot; All rights reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
